@@ -1,4 +1,5 @@
 import pytest
+
 LETTER_TO_MORSE = {
     'A': '.-', 'B': '-...', 'C': '-.-.',
     'D': '-..', 'E': '.', 'F': '..-.',
@@ -33,11 +34,11 @@ def decode(morse_message: str) -> str:
 
     return ''.join(decoded_letters)
 
+
 @pytest.mark.parametrize("morse_message, expected_result", [
     (".- ..--..", "A?"),
     ('... --- ...', 'SOS'),
-    ('.... . .-.. .-.. --- .-- --- .-. .-.. -..','HELLOWORLD')
+    ('.... . .-.. .-.. --- .-- --- .-. .-.. -..', 'HELLOWORLD')
 ])
 def test_decode(morse_message, expected_result):
     assert decode(morse_message) == expected_result
-
