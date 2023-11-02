@@ -1,0 +1,12 @@
+Результат всех проверок:
+============================= test session starts ==============================
+collecting ... collected 3 items
+
+morse2.py::test_decode[.- ..--..-A?]
+morse2.py::test_decode[... --- ...-SOS]
+morse2.py::test_decode[.... . .-.. .-.. --- .-- --- .-. .-.. -..-HELLOWORLD]
+
+============================== 3 passed in 0.01s ===============================
+
+Process finished with exit code 0
+PASSED                              [ 33%]PASSED                           [ 66%]PASSED [100%]
