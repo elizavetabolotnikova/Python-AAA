@@ -1,0 +1,13 @@
+Результат всех проверок:
+============================= test session starts ==============================
+collecting ... collected 4 items
+
+one_hot_encoder1.py::TestOneHotEncoder::test_fit_transform
+one_hot_encoder1.py::TestOneHotEncoder::test_fit_transform_empty_input
+one_hot_encoder1.py::TestOneHotEncoder::test_fit_transform_list
+one_hot_encoder1.py::TestOneHotEncoder::test_fit_transform_one_word
+
+============================== 4 passed in 0.01s ===============================
+
+Process finished with exit code 0
+PASSED        [ 25%]PASSED [ 50%]PASSED   [ 75%]PASSED [100%]
