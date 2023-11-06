@@ -1,0 +1,42 @@
+Команды для запуска всех проверок:
+python3 -m doctest -o NORMALIZE_WHITESPACE -v morse1.py
+python3 -m doctest -o NORMALIZE_WHITESPACE -o ELLIPSIS morse1.py
+Результат всех проверок:
+Trying:
+    encode('SOS')
+Expecting:
+    '... --- ...'
+ok
+Trying:
+    encode('')
+Expecting:
+    ''
+ok
+Trying:
+    encode('Hello, world!')
+Expecting:
+    '.... . .-.. .-.. ---                              .-- --- .-. .-.. -..'
+ok
+Trying:
+    encode('$$$$$$$')
+Expecting:
+    Traceback (most recent call last):
+        ...
+    ValueError: Invalid Morse code
+**********************************************************************
+Failed example:
+    encode('$$$$$$$')
+Expected:
+    Traceback (most recent call last):
+        ...
+    ValueError: Invalid Morse code
+Got:
+    ''
+1 items had no tests:
+    morse1
+**********************************************************************
+1 items had failures:
+   1 of   4 in morse1.encode
+4 tests in 2 items.
+3 passed and 1 failed.
+***Test Failed*** 1 failures.
